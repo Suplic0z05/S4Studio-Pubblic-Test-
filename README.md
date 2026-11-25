@@ -11,10 +11,14 @@ content, packages, plugins, AI assistant and web dashboard.
 
 ## How to become a tester
 
+> **⚠ Beta not ready for download yet.** The Releases section is still empty: the beta
+> build will be published here only once it passes the team's stability checks.
+> You can apply now — licenses are assigned and the first wave gets access at release.
+
 1. Get a **license key** from the team (format `S4T1.….…`) — it is personal, time-limited
    (**1 week**) and tracked: keys are **limited in number**. To request one, open an issue
    here with the *Tester application* template (top-right **New issue**).
-2. Download `S4StudioSetup.exe` from the **Releases** section.
+2. When the beta is published: download `S4StudioSetup.exe` from the **Releases** section.
 3. Run the installer → it picks the install path → downloads the official runtimes (.NET,
    MariaDB) **verifying their hashes** → extracts the app and **seals** it (integrity manifest).
 4. On first launch, enter your key: without a valid key (not expired, not revoked)
@@ -53,6 +57,20 @@ content, packages, plugins, AI assistant and web dashboard.
 - Test only on servers/databases you own or are authorized to use
 - Report through issues, one issue per problem, and **never paste passwords,
   tokens or AI keys** — logs only, from the relevant section
+
+## The beta cooldown (how the 1-week window works)
+
+The beta build uses a **sliding 7-day cooldown** instead of a hard expiration:
+
+- at **every launch** (every visit) the cooldown **restarts from that moment**: the app is
+  always usable for the next 7 days, however often you reopen it;
+- the window is persisted encrypted (DPAPI) and shown in the license status file, so the
+  team can see when a key was last visited;
+- this works only while the key signature is valid and the key is not revoked — revocation
+  stays an immediate, unconditional block;
+- known, declared limit: on a single PC the window is anchored to the system clock; the
+  team server (online verification, next step) will overwrite the local window when
+  reachable.
 
 ## License & integrity (how the build is protected)
 
