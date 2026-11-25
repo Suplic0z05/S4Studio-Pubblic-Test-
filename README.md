@@ -55,18 +55,21 @@ serious project, not a weekend script.
 
 ## How to become a tester
 
-> **⚠ Beta not ready for download yet.** The Releases section is still empty: the beta build
-> will be published here only once it passes the team's stability checks. You can apply now —
-> licenses are assigned and the first wave gets access at release.
+> **Downloads today vs tester beta.** A first **stable alpha build** (no tester key needed) is
+> already published on the [main repo Releases](https://github.com/Suplic0z05/S4Studio/releases/tag/v0.0.0.1-alpha).
+> The **key-gated beta builds** of this program are not published yet — you can apply now:
+> licenses are assigned and the first wave gets access at the beta release.
 
 <img src="assets/beta-countdown.gif" alt="Decorative countdown to the first beta download" width="720">
 
 1. Open an issue here with the **Tester application** template (top-right **New issue**) — tell us
    your Windows version, which client/season you own, what you want to test and your weekly time.
 2. If accepted you receive a personal **license key** (`S4T1.….…`).
-3. When the beta is published: download `S4StudioSetup.exe` from **Releases**. The installer picks
-   the path, downloads the official runtimes verifying their hashes, extracts the app and **seals**
-   it (integrity manifest).
+3. When the **key-gated beta** is published here: download `S4StudioSetup.exe` from
+   **Releases**. The installer picks the path, downloads the official runtimes verifying their
+   hashes, extracts the app and **seals** it (integrity manifest).
+   *(Meanwhile, the ungated stable alpha on the [main repo](https://github.com/Suplic0z05/S4Studio/releases/tag/v0.0.0.1-alpha)
+   starts without a key — same hub, beta channel only.)*
 4. On first launch enter your key: without a valid key (not expired, not revoked) **the app does
    not start**.
 
