@@ -40,7 +40,7 @@ you will actually get on day one:
 - 🌙 **And much more** — automations, multi-season fleet control, Discord integration… the
   complete list (with evidence) is on the main repo.
 
-Every one of these is backed by **776 automated tests + a 102-scenario E2E harness** — this is a
+Every one of these is backed by **806 automated tests + a 102-scenario E2E harness** — this is a
 serious project, not a weekend script.
 
 ## Why join the beta
@@ -78,14 +78,21 @@ serious project, not a weekend script.
 
 ## Tester keys — 1 week, then everything goes
 
-- Your personal key lasts **1 week**.
-- When it expires, the **beta build removes itself from the machine**: the application and every
-  file and structure it created (including its sealed data) are deleted, so **no project file is
+- Your personal key lasts **exactly 1 week** (the signed expiry date is authoritative — regular
+  use does not extend it).
+- The key is **single-use**: it activates exactly one installation and it is also the
+  **self-destruct key** of the build — it can never be reused. Expired, revoked or consumed:
+  nothing is recoverable, and continuing requires a **brand-new key from the team**.
+- When it expires, the **beta build removes itself from the machine**: after a 20-second
+  countdown (you can only postpone it to the next launch), the application and every file and
+  structure it created (including its sealed data) are deleted, so **no project file is
   recoverable from that computer** — until you decide to support the work and get a new key.
+  Your game client and the sources you asked the app to analyze are **never touched**.
 - The **first keys are free**, but only for a **limited number of spots**; once those are taken,
   keys require supporting the work (contribution).
-- Keys remain team-signed (RSA-3072) and revocable at any time. Revoked = immediate lockout and
-  purge on next launch.
+- Keys are team-signed (RSA-3072) and can be revoked at any time. Honest limit: revocation takes
+  effect **at the next launch** after the team-updated revocation list reaches your app — without
+  online verification (next step) the block is not sub-second; the signed expiry date always is.
 
 ## What to test (in priority order)
 
