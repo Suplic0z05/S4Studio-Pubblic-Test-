@@ -60,6 +60,10 @@ serious project, not a weekend script.
 > The **key-gated beta builds** of this program are not published yet — you can apply now:
 > licenses are assigned and the first wave gets access at the beta release.
 
+[![Download S4Studio beta build](assets/download-button.png)](https://www.youtube.com/watch?v=DLzxrzFCyOs)
+
+*▲ Live download button — the team reserved a special response for early clickers.*
+
 <img src="assets/beta-countdown.gif" alt="Decorative countdown to the first beta download" width="720">
 
 1. Open an issue here with the **Tester application** template (top-right **New issue**) — tell us
@@ -72,14 +76,16 @@ serious project, not a weekend script.
 4. On first launch enter your key: without a valid key (not expired, not revoked) **the app does
    not start**.
 
-## Tester keys — 1 week, then your choice
+## Tester keys — 1 week, then everything goes
 
 - Your personal key lasts **1 week**.
-- When it expires the app deactivates itself: **no project file or data is recoverable through
-  it** — until you decide to support the work and get a new key.
+- When it expires, the **beta build removes itself from the machine**: the application and every
+  file and structure it created (including its sealed data) are deleted, so **no project file is
+  recoverable from that computer** — until you decide to support the work and get a new key.
 - The **first keys are free**, but only for a **limited number of spots**; once those are taken,
   keys require supporting the work (contribution).
-- Keys remain team-signed (RSA-3072) and revocable at any time.
+- Keys remain team-signed (RSA-3072) and revocable at any time. Revoked = immediate lockout and
+  purge on next launch.
 
 ## What to test (in priority order)
 
