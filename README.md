@@ -1,52 +1,68 @@
-# S4Studio — Versione Pubblica Tester (Alpha & Beta)
+# S4Studio — Public Tester Build (Alpha & Beta)
 
-Hub desktop per gestire un server S4 League: client, sorgenti, processi, database,
-contenuti, pacchetti, plugin, assistente AI e dashboard web.
+A desktop hub to manage an S4 League private server: client, sources, processes, database,
+content, packages, plugins, AI assistant and web dashboard.
 
-> **Questa repo contiene SOLO la build di test.** Il codice sorgente è privato (repo team).
-
-## Come diventare tester
-
-1. Ricevi una **chiave licenza** dal team (formato `S4T1.….…`) — è personale, a tempo
-   (**1 settimana**) ed è tracciata: le chiavi sono in numero **limitato**.
-2. Scarica `S4StudioSetup.exe` dalla sezione **Releases**.
-3. Avvia l'installer → sceglie il percorso → scarica i runtime ufficiali (.NET, MariaDB)
-   verificandone l'hash → estrae l'app e la **sigilla** (manifest di integrità).
-4. Alla prima esecuzione inserisci la tua chiave: senza chiave valida (non scaduta, non
-   revocata) **l'app non si avvia**.
-5. Dopo la scadenza l'app si disattiva da sola: nessun file del progetto è recuperabile
-   attraverso l'app. Rinnovo = nuova chiave dal team (o ingresso nel team, che sblocca
-   l'accesso continuativo).
-
-## Requisiti
-
-- Windows 10/11 x64 (runtime .NET 10 e MariaDB sono scaricati dall'installer con hash verificato)
-- Nessuna conoscenza richiesta: il wizard di primo avvio chiede solo le cartelle
-
-## Cosa testare (priorità)
-
-1. **Installazione** (installer, primo avvio, wizard) e **database.setup** (MariaDB con hash ufficiale)
-2. **Database**: connessione, schema, giocatori, backup
-3. **Shop Wizard** e `shop.check` (coerenza item client ↔ DB)
-4. **Client**: apertura `resource.s4hd`, anteprima, estrazione, import
-5. **Console Admin web**: login, TOTP, comandi
-6. Problemi: apri una **Issue** qui con log (cartella dati → `Data/machine/logs`)
-
-## Regole del tester
-
-- La chiave è personale: non condividerla (è tracciata e può essere revocata)
-- Nessun anti-cheat viene toccato: il progetto non fa cheat/inject
-- Test solo su server/database di tua proprietà o autorizzati
-
-## Licenza & integrità
-
-- Build **sigillata**: `installation-manifest.json` con SHA-256 + digest protetto (l'installer
-  verifica; l'app rifiuta file alterati)
-- Le licenze sono **firmate crittograficamente** (RSA-3072): alterare o prolungare una chiave
-  senza la chiave del team è matematicamente infeasible
-- Limito dichiarato: l'app disconosce l'orologio di sistema — senza verifica online un utente
-  esperto può spostare l'orologio; la verifica online è il passo successivo (il server del team
-  sovrascrive la scadenza locale quando raggiungibile)
+> **This repository hosts ONLY the test build.** The source code stays private (team repo):
+> see the public project page at [Suplic0z05/S4Studio](https://github.com/Suplic0z05/S4Studio)
+> for documentation, architecture and the tester guide.
 
 ---
-Progetto: S4Studio · canale alpha · © team S4Studio — riservato ai tester autorizzati
+
+## How to become a tester
+
+1. Get a **license key** from the team (format `S4T1.….…`) — it is personal, time-limited
+   (**1 week**) and tracked: keys are **limited in number**. To request one, open an issue
+   here with the *Tester application* template (top-right **New issue**).
+2. Download `S4StudioSetup.exe` from the **Releases** section.
+3. Run the installer → it picks the install path → downloads the official runtimes (.NET,
+   MariaDB) **verifying their hashes** → extracts the app and **seals** it (integrity manifest).
+4. On first launch, enter your key: without a valid key (not expired, not revoked)
+   **the app does not start**.
+5. After expiry the app deactivates itself: no project file is recoverable through the app.
+   Renewal = a new key from the team (or joining the team, which unlocks continuous access).
+
+## Requirements
+
+- Windows 10/11 x64 (the .NET 10 runtime and MariaDB are downloaded by the installer with
+  verified hashes)
+- No prior knowledge required: the first-run wizard only asks for two folders
+  (the client folder with `S4Client.exe` + `resource.s4hd`, and the sources folder)
+
+## What to test (in priority order)
+
+1. **Installation** (installer, first launch, wizard) and **database setup**
+   (MariaDB with the official hash)
+2. **Database**: connection, schema, players, backups
+3. **Shop Wizard** and `shop.check` (client ↔ DB item consistency)
+4. **Client**: opening `resource.s4hd`, text preview, extraction, import, save with backup
+5. **Web Admin Console**: login, TOTP, commands
+6. Anything else: open an **Issue** here with logs (data folder → `Data/machine/logs`)
+
+## What you get as a tester
+
+- Early builds before wider distribution, with changelogs
+- A direct line to the developer: your reports shape the roadmap
+- Credit in release notes for findings that lead to fixes
+- Hands-on practice with the tool before anyone runs it on a live server
+
+## Tester rules
+
+- The key is personal: do not share it (it is tracked and can be revoked)
+- No anti-cheat is ever touched: the project contains no cheat/inject features
+- Test only on servers/databases you own or are authorized to use
+- Report through issues, one issue per problem, and **never paste passwords,
+  tokens or AI keys** — logs only, from the relevant section
+
+## License & integrity (how the build is protected)
+
+- Builds are **sealed**: `installation-manifest.json` with a SHA-256 per file and a protected
+  digest (the installer verifies it; the app refuses altered files)
+- Licenses are **cryptographically signed** (RSA-3072): altering or extending a key without
+  the team key is mathematically infeasible
+- Known, declared limit: the app trusts the system clock — without online verification a
+  skilled user can move the clock; online verification is the next step (the team server
+  overrides the local expiry when reachable)
+
+---
+Project: S4Studio · alpha channel · © team S4Studio — reserved for authorized testers
