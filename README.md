@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Suplic0z05/S4Studio/main/assets/branding/s4studio-logo-512.png" alt="S4Studio logo" width="128">
+<img src="assets/s4studio-logo-512.png" alt="S4Studio logo" width="128">
 
 <img src="assets/hub-banner.gif" alt="S4Studio — one desktop hub for every part of an S4 League server" width="880">
 
@@ -67,9 +67,8 @@ serious project, not a weekend script.
 2. If accepted you receive a personal **license key** (`S4T1.….…`).
 3. When the **key-gated beta** is published here: download `S4StudioSetup.exe` from
    **Releases**. The installer picks the path, downloads the official runtimes verifying their
-   hashes, extracts the app and **seals** it (integrity manifest).
-   *(Meanwhile, the ungated stable alpha on the [main repo](https://github.com/Suplic0z05/S4Studio/releases/tag/v0.0.0.1-alpha)
-   starts without a key — same hub, beta channel only.)*
+   hashes, extracts the app and **seals** it (integrity manifest). Same installer, beta channel:
+   this one starts **only with a valid tester key**.
 4. On first launch enter your key: without a valid key (not expired, not revoked) **the app does
    not start**.
 
