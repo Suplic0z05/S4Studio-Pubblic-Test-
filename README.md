@@ -70,22 +70,17 @@ harness · 71 internal design/ops documents · seasons 1–10 supported.
    it (integrity manifest).
 4. On first launch enter your key: without a valid key (not expired, not revoked) **the app does
    not start**.
-5. After expiry the app deactivates itself — no project file is recoverable through it. Renewal =
-   a new key from the team, or joining the team for continuous access.
+5. After expiry the app deactivates itself — no project file is recoverable through it. To keep
+   testing, support the work and get a new key (the first free spots are limited).
 
-## The beta cooldown (the 1-week sliding window)
+## Tester keys — 1 week, then your choice
 
-The beta build uses a **sliding 7-day cooldown** instead of a hard expiration — the timer above is
-its decorative twin (it loops, it is not real):
-
-- at **every launch** (every visit) the cooldown **restarts from that moment**: the app is always
-  usable for the next 7 days, however often you reopen it;
-- the window is persisted encrypted (DPAPI) and recorded in the license status file, so the team
-  can see when a key was last visited;
-- it works only while the key signature is valid and the key is not revoked — **revocation stays
-  an immediate, unconditional block**;
-- declared limit: on a single PC the window is anchored to the system clock; the team server
-  (online verification, next step) will overwrite the local window when reachable.
+- Your personal key lasts **1 week**.
+- When it expires the app deactivates itself: **no project file or data is recoverable through
+  it** — until you decide to support the work and get a new key.
+- The **first keys are free**, but only for a **limited number of spots**; once those are taken,
+  keys require supporting the work (contribution).
+- Keys remain team-signed (RSA-3072) and revocable at any time.
 
 ## What to test (in priority order)
 
