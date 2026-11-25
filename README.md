@@ -11,7 +11,7 @@
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11%20x64-blue)
 ![Stack](https://img.shields.io/badge/.NET-10%20·%20WPF%20MVVM-512BD4)
 ![Channel](https://img.shields.io/badge/channel-alpha%20·%20beta-orange)
-![Tests](https://img.shields.io/badge/automated%20tests-776%20%2B%20E2E%20102-2EA44F)
+![Tests](https://img.shields.io/badge/automated%20tests-806%20%2B%20E2E%20102-2EA44F)
 ![License model](https://img.shields.io/badge/tester%20keys-RSA--3072%20signed-8B5CF6)
 
 | Repository | What it is | Who it is for |
