@@ -16,7 +16,7 @@
 
 | Repository | What it is | Who it is for |
 |---|---|---|
-| **[S4Studio](https://github.com/Suplic0z05/S4Studio)** *(development hub)* | Full source, architecture, complete technical documentation, changelog channels | Developers, contributors |
+| **[S4Studio](https://github.com/Suplic0z05/S4Studio)** *(development hub — team only)* | Full source, architecture, complete technical documentation, changelog channels | Team, contributors with access |
 | **S4Studio-Pubblic-Test-** *(you are here)* | Sealed alpha/beta builds, signed 1-week tester keys, bug reports | Beta testers, server owners |
 
 </div>
@@ -55,10 +55,10 @@ serious project, not a weekend script.
 
 ## How to become a tester
 
-> **Downloads today vs tester beta.** A first **stable alpha build** (no tester key needed) is
-> already published on the [main repo Releases](https://github.com/Suplic0z05/S4Studio/releases/tag/v0.0.0.1-alpha).
-> The **key-gated beta builds** of this program are not published yet — you can apply now:
-> licenses are assigned and the first wave gets access at the beta release.
+> **Key-gated beta only.** Every build published here requires a **personal tester key**:
+> **1 week of use**, then the build removes itself from the machine. Apply now with the
+> *Tester application* template — the first keys are free, for a limited number of spots.
+> There is no ungated download in this program: the public channel ships key-protected builds only.
 
 [![Download S4Studio beta build](assets/download-button.png)](https://www.youtube.com/watch?v=DLzxrzFCyOs)
 
@@ -69,10 +69,10 @@ serious project, not a weekend script.
 1. Open an issue here with the **Tester application** template (top-right **New issue**) — tell us
    your Windows version, which client/season you own, what you want to test and your weekly time.
 2. If accepted you receive a personal **license key** (`S4T1.….…`).
-3. When the **key-gated beta** is published here: download `S4StudioSetup.exe` from
-   **Releases**. The installer picks the path, downloads the official runtimes verifying their
-   hashes, extracts the app and **seals** it (integrity manifest). Same installer, beta channel:
-   this one starts **only with a valid tester key**.
+3. When your **key-gated beta** arrives: download `S4StudioSetup.exe` from **Releases here**.
+   The installer picks the path, downloads the official runtimes verifying their hashes,
+   extracts the app and **seals** it (integrity manifest). This build starts **only with a
+   valid tester key** and works for the duration of your key (1 week).
 4. On first launch enter your key: without a valid key (not expired, not revoked) **the app does
    not start**.
 
