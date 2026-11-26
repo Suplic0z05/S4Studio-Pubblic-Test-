@@ -127,6 +127,21 @@ then download `S4StudioSetup-beta.exe` from the latest tester release.*
 - Test only on servers/databases you own or are authorized to use
 - One issue per problem, logs only — **never paste passwords, tokens or AI keys**
 
+## License, cloning and reuse
+
+- This repository is **not open source**. It exists to distribute key-gated tester builds that
+  support the original project, and nothing else: see [`LICENSE`](LICENSE).
+- **No source code is published here.** Cloning this repository gives you the README, the license,
+  the preview images and the issue templates — not a reusable project.
+- Reuse, redistribution, forks used to ship builds, and reverse engineering of the sealed payload
+  are **not licensed**. Keys are personal, single-use and revocable, so a leaked or shared key
+  stops working for everyone who receives it.
+- Honest limit: any public Git repository can be **technically** cloned — no license or repository
+  setting changes that. What protects the project is the combination of this license, the absence
+  of source, and the fact that a build **does not run** without a valid team-signed key.
+- If you find an unauthorized copy, a leaked key or a mirrored build, report it privately: leaked
+  keys are revoked and the copy is taken down.
+
 ## Build integrity
 
 - Builds are **sealed**: `installation-manifest.json` with a SHA-256 per file and a protected

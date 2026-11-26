@@ -1,0 +1,48 @@
+S4Studio Tester Program License
+Copyright (c) 2026 Suplic0z05. All rights reserved.
+
+This repository and every build distributed through it are PROPRIETARY and are not
+open source. They are published for one purpose only: letting approved testers run and
+evaluate S4Studio and report problems to support the original project.
+
+1. Grant of use
+   You may download and run a sealed build only if you hold a team-signed tester key,
+   and only for the validity of that key (one week from the signed expiry date). The key
+   is personal, single-use, and non-transferable.
+
+2. No reuse, no derivative works
+   You may not copy, modify, adapt, translate, decompile, disassemble, reverse engineer,
+   or create derivative works from the builds, the installer, the sealed payload, the
+   documentation or any asset of this repository, except where such restriction is
+   prohibited by applicable law.
+
+3. No redistribution
+   You may not host, mirror, fork, re-upload, resell, sublicense or otherwise
+   redistribute this repository, its assets or the builds, in whole or in part, nor use
+   them to build or run another product or service. Forks and copies are not licensed
+   for any use and must not be used to distribute builds.
+
+4. No circumvention
+   You may not bypass, disable or alter the license gate, the signature checks, the
+   integrity seal or the self-removal (purge) behavior of the tester builds.
+
+5. Termination
+   The license ends automatically at the signed expiry of the key, or immediately on
+   revocation. On expiry or revocation the build removes itself: the installation, the
+   application data and every artifact derived from the project are deleted and are not
+   recoverable. Original game client files and user sources are never touched.
+
+6. No warranty
+   The builds are alpha software provided "as is", without warranty of any kind, to the
+   maximum extent permitted by law. Test only on servers and databases you own or are
+   authorized to use.
+
+7. Reporting
+   Security issues, leaked keys and unauthorized copies: open a private report through
+   the repository's security contact, or email the maintainer listed in the profile.
+   Leaked keys are revoked.
+
+Technical honesty: a public Git repository can always be cloned, and no license can
+technically prevent that. What is enforceable is this license, the absence of source
+code in this repository, and the fact that a build without a valid team-signed key does
+not run. If you find a copy that claims otherwise, it is unauthorized: report it.
