@@ -11,7 +11,7 @@
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11%20x64-blue)
 ![Stack](https://img.shields.io/badge/.NET-10%20·%20WPF%20MVVM-512BD4)
 ![Channel](https://img.shields.io/badge/channel-alpha%20·%20beta-orange)
-![Tests](https://img.shields.io/badge/automated%20tests-876%20%2B%20E2E%20119-2EA44F)
+![Tests](https://img.shields.io/badge/automated%20tests-933%20%2B%20E2E%20119-2EA44F)
 ![License model](https://img.shields.io/badge/tester%20keys-RSA--3072%20signed-8B5CF6)
 
 | Repository | What it is | Who it is for |
@@ -40,8 +40,19 @@ you will actually get on day one:
 - 🌙 **And much more** — automations, multi-season fleet control, Discord integration… the
   complete list (with evidence) is on the main repo.
 
-Every one of these is backed by **876 automated tests + a 119-scenario E2E harness** — this is a
+Every one of these is backed by **933 automated tests + a 119-scenario E2E harness** — this is a
 serious project, not a weekend script.
+
+## Build editions (what you are downloading)
+
+S4Studio is built in three compiled editions: **Master** (private, used by the maintainer to manage
+the project and to generate tester keys and builds), **Symbiont** (limited build for project
+modules) and **Pubblic Test** (this channel). The Pubblic Test build is compiled *without* the
+key/licence-generation code: it physically cannot issue keys, licences or edition builds, it accepts
+only a team-signed `edition.json` that can further restrict pages/commands, and (when a Master URL is
+configured in that manifest) it reports its installation so the maintainer can see where beta builds
+live. Limits, commands and the honest security boundary are documented in the private repo
+`docs/68-EDIZIONI.md`.
 
 ## Concept previews — what to expect
 
