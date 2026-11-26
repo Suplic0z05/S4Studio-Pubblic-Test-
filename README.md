@@ -60,21 +60,24 @@ serious project, not a weekend script.
 > *Tester application* template — the first keys are free, for a limited number of spots.
 > There is no ungated download in this program: the public channel ships key-protected builds only.
 
-[![Download S4Studio beta build](assets/download-button.png)](https://www.youtube.com/watch?v=DLzxrzFCyOs)
+[![Download S4Studio beta build](assets/download-button.png)](https://github.com/Suplic0z05/S4Studio-Pubblic-Test-/releases)
 
-*▲ Live download button — the team reserved a special response for early clickers.*
+*▲ The button opens the Releases page. Builds there are key-gated: apply for a key first (below),
+then download `S4StudioSetup-beta.exe` from the latest tester release.*
 
 <img src="assets/beta-countdown.gif" alt="Decorative countdown to the first beta download" width="720">
 
 1. Open an issue here with the **Tester application** template (top-right **New issue**) — tell us
    your Windows version, which client/season you own, what you want to test and your weekly time.
 2. If accepted you receive a personal **license key** (`S4T1.….…`).
-3. When your **key-gated beta** arrives: download `S4StudioSetup.exe` from **Releases here**.
-   The installer picks the path, downloads the official runtimes verifying their hashes,
-   extracts the app and **seals** it (integrity manifest). This build starts **only with a
-   valid tester key** and works for the duration of your key (1 week).
-4. On first launch enter your key: without a valid key (not expired, not revoked) **the app does
-   not start**.
+3. When your key is issued: download `S4StudioSetup-beta.exe` from the latest release in
+   **Releases here**. The installer asks for the path, makes you **accept the usage license**
+   (it states the definitive deletion at expiry), then **asks for your key and verifies it before
+   downloading anything**; only then it downloads the official runtimes (hash-verified), extracts
+   the app and **seals** it (integrity manifest).
+4. The build starts **only with a valid tester key** and works for the duration of that key
+   (1 week). Without a valid key (missing, expired, revoked, already consumed) **the app does not
+   start**.
 
 ## Tester keys — 1 week, then everything goes
 
