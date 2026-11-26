@@ -43,6 +43,19 @@ you will actually get on day one:
 Every one of these is backed by **806 automated tests + a 102-scenario E2E harness** — this is a
 serious project, not a weekend script.
 
+## Concept previews — what to expect
+
+<p align="center">
+  <img src="assets/previews/preview-dashboard.png" alt="S4Studio control dashboard concept" width="720"><br>
+  <img src="assets/previews/preview-resources.png" alt="S4Studio resource engine concept" width="720"><br>
+  <img src="assets/previews/preview-admin.png" alt="S4Studio web admin console concept" width="720">
+</p>
+
+> **These are concept previews, not final screenshots.** The interface, colours and animations are
+> still being decided, so the shipped build will look different. Every image is watermarked and
+> published at reduced fidelity on purpose: they are here so you know what to expect before asking
+> for a key, **not** as assets to extract, copy or reuse. Please don't republish them.
+
 ## Why join the beta
 
 - 🚀 **First access** — you run builds before anyone else, with changelogs
