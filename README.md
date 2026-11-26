@@ -100,10 +100,11 @@ then download `S4StudioSetup-beta.exe` from the latest tester release.*
   **self-destruct key** of the build — it can never be reused. Expired, revoked or consumed:
   nothing is recoverable, and continuing requires a **brand-new key from the team**.
 - When it expires, the **beta build removes itself from the machine**: after a 20-second
-  countdown (you can only postpone it to the next launch), the application and every file and
-  structure it created (including its sealed data) are deleted, so **no project file is
-  recoverable from that computer** — until you decide to support the work and get a new key.
-  Your game client and the sources you asked the app to analyze are **never touched**.
+  countdown (you can only postpone it to the next launch), the application, its sealed data and
+  **every artifact the app derived** (package backups in `.s4studio-backup`, `.bak` config copies,
+  reports) are deleted, so **no project file is recoverable from that computer** — until you
+  decide to support the work and get a new key. Your **original game client and the sources** you
+  asked the app to analyze are **never touched**.
 - The **first keys are free**, but only for a **limited number of spots**; once those are taken,
   keys require supporting the work (contribution).
 - Keys are team-signed (RSA-3072) and can be revoked at any time. Honest limit: revocation takes
